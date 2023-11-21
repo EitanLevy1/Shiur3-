@@ -1,0 +1,192 @@
+import java.util.Scanner;
+public class Main 
+{
+   public static void main(String[] args) 
+  {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a number:");
+    int number = scanner.nextInt();
+    if (number > 0)
+      System.out.println("the number is positive");
+    else if (number < 0)
+      System.out.println("the number is negative");
+    else
+        System.out.println("the number is zero");
+  }
+}
+    
+
+
+import java.util.Scanner;
+public class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter first number:");
+    int num1 = scanner.nextInt();
+    System.out.println("Enter second number:");
+    int num2 = scanner.nextInt();
+    if (num1 < num2)
+      System.out.println("the smallest number is: " + num1);
+    else
+      System.out.println("the smallest number is: " + num2);
+  }
+}
+
+
+
+import java.util.Scanner;
+public class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter your first initial rider1:");
+    char rider1 = scanner.nextLine().charAt(0);
+    System.out.println("Enter your first initial rider2:");
+    char rider2 = scanner.nextLine().charAt(0);
+    System.out.println("Enter the first distance:");
+    double distance1 = scanner.nextDouble();
+    System.out.println("Enter the second distance:");
+    double distance2 = scanner.nextDouble();
+    System.out.println("Enter the first speed:");
+    double speed1 = scanner.nextDouble();
+    System.out.println("Enter the second speed:");
+    double speed2 = scanner.nextDouble();
+    double time1 = distance1 / speed1;
+    double time2 = distance2 / speed2;
+    if (time1 < time2)
+      System.out.println("the winner is: "+ rider1);
+    else
+      System.out.println("the winner is: "+ rider2);
+  }
+}
+
+
+
+import java.util.Scanner;
+public class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter first grade:");
+    double grade1 = scanner.nextDouble();
+    System.out.println("Enter second grade:");
+    double grade2 = scanner.nextDouble();
+    System.out.println("Enter third grade:");
+    double grade3 = scanner.nextDouble();
+    double average = (grade1 + grade2 + grade3) / 3;
+    System.out.println("The average grade is: " + average);
+  }
+}
+
+
+
+import java.util.Scanner;
+public class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter first number:");
+    int num1 = scanner.nextInt();
+    System.out.println("Enter second number:");
+    int num2 = scanner.nextInt();
+    System.out.println("Enter third number:");
+    int num3 = scanner.nextInt();
+    if (num1 <= num2 && num1 <= num3)
+      System.out.println("the smallest number is: "+ num1);
+    else if (num2 <= num1 && num2 <= num3)
+      System.out.println("the smallest number is: "+ num2);
+    else
+      System.out.println("the smallest number is: "+ num3);
+  }
+}
+
+
+
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String[] args)
+  {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("enter the first number of the invoice series: ");
+    int num1 = scanner.nextInt();
+    System.out.println("enter the difference of the series");
+    int diff = scanner.nextInt();
+    int num5 = num1 + (5-1)*diff;
+    int num10 = num1 + (10-1)*diff;
+    System.out.println(num5);
+    System.out.println(num10);
+  }
+}
+
+
+
+import java.util.Scanner;
+
+public class Main 
+{
+    public static void main(final String[] args) 
+  {
+        final Scanner scanner = new Scanner(System.in);
+        System.out.println("enter how many ice creams you want to buy: ");
+        int icecreams = scanner.nextInt();
+        int unit = icecreams % 10;
+        int tens = icecreams / 10;
+
+        if (icecreams > 108) {
+            System.out.println("you can't buy ice creams");
+        } else if (icecreams <= 49) {
+            System.out.println(tens * 10 + unit * 1.2);
+        } else if (icecreams > 49 && icecreams < 55) {
+            System.out.println(50);
+        } else if (icecreams > 54 && icecreams < 108) {
+            int icecreams1 = icecreams - 54;
+            int unit1 = icecreams1 % 10;
+            int tens1 = icecreams1 / 10;
+            System.out.println(50 + (tens1 * 10) + (unit1 * 1.2));
+        } else if (icecreams == 108) {
+            System.out.println(100);
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+public class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter your full name:");
+    String fullName = scanner.nextLine();
+    System.out.println("Enter your school name:");
+    String schoolName = scanner.nextLine();
+    System.out.println("Enter the number of subjects you study:");
+    int numOfSubjects = scanner.nextInt();
+    System.out.println("My name is " + fullName + ", My school is " + schoolName + ", The number of subjects I study is " + numOfSubjects + ".");
+  }
+}
+
+
+
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String[] args)
+  {
+  Scanner scanner = new Scanner(System.in);
+  System.out.println("enter a 3 digit number:");
+  int num = scanner.nextInt();
+  int unit = num % 10;
+  int ten = (num / 10) %10;
+  int hun = num / 100;
+  int sum = unit + ten + hun;
+  System.out.println("the sum is"+ sum);
+  }
+}
